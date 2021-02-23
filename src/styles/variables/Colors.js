@@ -1,0 +1,7 @@
+export const backgroundcolor = '#FFFFFF'
+export const primarycolor = '#555555'
+export const secondarycolor = '#185F7F'
+export const titlescolor = '#222222'
+export const btncolor = 'transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat padding-box'
+export const ftertitlescolor = '#101C21'
+export const ftertxtcolor = '#777777'
