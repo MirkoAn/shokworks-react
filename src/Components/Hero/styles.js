@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { mediaQueries } from '../../styles/MediaQueries/MediaQueries'
+
 import * as fonttheme from '../../styles/variables/FontThemes'
 import * as colors from '../../styles/variables/Colors'
 
@@ -16,6 +18,9 @@ export const HeroWrapper = styled.section`
 
 export const Image = styled.img`
   width: 90%;
+  ${mediaQueries('laptop')`
+    width: 30%;
+  `}
 `
 
 export const Container = styled.div`
@@ -23,6 +28,9 @@ export const Container = styled.div`
   font-family: ${fonttheme.font1};
   font-size: 20px;
   margin-top: 30px;
+  ${mediaQueries('laptop')`
+    font-size: 30px;
+  `}
 `
 
 export const ButtonsContainer = styled.div`
@@ -36,11 +44,18 @@ export const BlueButton = styled.div`
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
+  ${mediaQueries('laptop')`
+    margin-left: 40px;
+  `} 
 
   a {
+    ${mediaQueries('laptop')`
+    width: 182px;
+    height: 62px;
+  `} 
     color: ${colors.backgroundcolor};
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 30px;
     width: 150px;
