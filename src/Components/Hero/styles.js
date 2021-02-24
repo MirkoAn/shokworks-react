@@ -60,7 +60,7 @@ export const BlueButton = styled.div`
     padding: 10px 30px;
     width: 150px;
     height: 58px;
-    font-family: ${fonttheme.font1}
+    font-family: ${fonttheme.font1};
   }
 `
 export const WhiteButton = styled(BlueButton)`
