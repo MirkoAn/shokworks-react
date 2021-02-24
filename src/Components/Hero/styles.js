@@ -1,0 +1,64 @@
+import styled from 'styled-components'
+
+import * as fonttheme from '../../styles/variables/FontThemes'
+import * as colors from '../../styles/variables/Colors'
+
+import BgImg from '../../assets/images/Group2258.png'
+
+export const HeroWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-image: url(${BgImg});
+`
+
+export const Image = styled.img`
+  width: 90%;
+`
+
+export const Container = styled.div`
+  text-transform: capitalize;
+  font-family: ${fonttheme.font1};
+  font-size: 20px;
+  margin-top: 30px;
+`
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+`
+
+export const BlueButton = styled.div`
+  background: ${colors.btncolor};
+  margin-top: 25px;
+  margin-left: 15px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+
+  a {
+    color: ${colors.backgroundcolor};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    width: 150px;
+    height: 58px;
+    font-family: ${fonttheme.font1}
+  }
+`
+export const WhiteButton = styled(BlueButton)`
+  background: ${colors.backgroundcolor};
+  border: 1px solid ${colors.secondarycolor};
+  &:hover {
+    background: ${colors.secondarycolor};
+    transition: 0.5s;
+    a {
+      color: ${colors.backgroundcolor};
+    }
+  }
+  a {
+    color: ${colors.secondarycolor};
+  }
+`
