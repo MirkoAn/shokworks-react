@@ -2,6 +2,7 @@ import React from 'react'
 import { Footer } from './Components/Footer'
 import { Header } from './Components/Header'
 import { Hero } from './Components/Hero'
+import { Partners } from './Components/Partners&Clients'
 import { Support } from './Components/Support'
 import { Work } from './Components/Work'
 
@@ -14,6 +15,7 @@ export const App = () => (
     <Hero />
     <Work />
     <Support />
+    <Partners />
     <Footer />
   </>
 )
