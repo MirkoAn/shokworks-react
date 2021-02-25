@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background: url(${Background}) bottom no-repeat;
   font-family: ${fonttheme.font1};
   span {
