@@ -1,5 +1,6 @@
 import React from 'react'
 import { Footer } from './Components/Footer'
+import { FormContainer } from './Components/FormContainer'
 import { Header } from './Components/Header'
 import { Hero } from './Components/Hero'
 import { Partners } from './Components/Partners&Clients'
@@ -16,6 +17,7 @@ export const App = () => (
     <Work />
     <Support />
     <Partners />
+    <FormContainer />
     <Footer />
   </>
 )
