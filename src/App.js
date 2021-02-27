@@ -4,6 +4,7 @@ import { Header } from './Components/Header'
 import { Hero } from './Components/Hero'
 import { Partners } from './Components/Partners&Clients'
 import { Support } from './Components/Support'
+import { Testimonials } from './Components/Testimonials'
 import { Work } from './Components/Work'
 
 import { GlobalStyle } from './styles/GlobalStyles'
@@ -16,6 +17,7 @@ export const App = () => (
     <Work />
     <Support />
     <Partners />
+    <Testimonials />
     <Footer />
   </>
 )
