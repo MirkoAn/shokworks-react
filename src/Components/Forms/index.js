@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Form, FormButton } from './styles'
+import { Form, FormButton, Row } from './styles'
 
 export const Forms = () => {
   const [name, setName] = useState('')
@@ -17,14 +17,16 @@ export const Forms = () => {
   console.log(name)
   return (
     <Form action=''>
-      <label>
-        First Name <br />
-        <input value={name} onChange={handleNameChange} type='text' name='name' placeholder='Robert Lee' />
-      </label>
-      <label>
-        Last Name <br />
-        <input type='text' name='name' placeholder='Anderson' />
-      </label>
+      <Row>
+        <label>
+          First Name <br />
+          <input value={name} onChange={handleNameChange} type='text' name='name' placeholder='Robert Lee' />
+        </label>
+        <label>
+          Last Name <br />
+          <input type='text' name='name' placeholder='Anderson' />
+        </label>
+      </Row>
       <label>
         Your Email Adress <br />
         <input value={email} onChange={handleEmailChange} type='email' name='email' placeholder='kevin.jones@gmail.com' />

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { mediaQueries } from '../../styles/MediaQueries/MediaQueries'
+
 import * as fonttheme from '../../styles/variables/FontThemes'
 import * as colors from '../../styles/variables/Colors'
 
@@ -13,6 +15,18 @@ export const Form = styled.form`
   background-color: ${colors.backgroundcolor};
   font-family: ${fonttheme.font1};
 
+  ${mediaQueries('laptop')`
+    width: 700px;
+    height: 584px; 
+    margin: 40px 0 40px 50px;
+  `}
+
+  ${mediaQueries('laptopxl')`
+    width: 929px;
+    height: 784px;
+    margin-left: 187px;  
+  `}
+
   label {
     font-weight: 600;
   }
@@ -25,6 +39,10 @@ export const Form = styled.form`
         margin-bottom: 20px;
         border-bottom: 1px solid #C2C2C2;
 
+        ${mediaQueries('laptopxl')`
+          margin-bottom: 50px;
+        `}
+
         &:focus {
             outline: none;
         }
@@ -36,6 +54,12 @@ export const Form = styled.form`
         margin-bottom: 20px;
         border-bottom: 1px solid #C2C2C2;
         color: ${colors.primarycolor};
+
+        ${mediaQueries('laptopxl')`
+          margin-top: 40px;
+          margin-bottom: 50px;
+        `}
+
         &:focus {
             outline: none;
         }
@@ -47,6 +71,7 @@ export const Form = styled.form`
 `
 export const FormButton = styled.div`
   display: flex;
+  justify-content: center;
   width: 150px;
   height: 58px;
   border-radius: 4px;
@@ -54,6 +79,11 @@ export const FormButton = styled.div`
   text-align: center;
   background: ${colors.backgroundcolor};
   border: 1px solid ${colors.secondarycolor};
+
+  ${mediaQueries('laptop')`
+    width: 181px;
+    height: 61px;
+  `}
 
   &:hover {
     background: ${colors.secondarycolor};
@@ -65,7 +95,6 @@ export const FormButton = styled.div`
 
   a {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 10px 30px;
     font-family: ${fonttheme.font1};
@@ -79,4 +108,14 @@ export const FormButton = styled.div`
       content: 'Know More';
     }
   }
+`
+export const Row = styled.div`
+
+${mediaQueries('laptop')`
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 260px;
+  }
+  `}
 `
