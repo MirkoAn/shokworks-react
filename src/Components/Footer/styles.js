@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-// import { mediaQueries } from '../../styles/MediaQueries/MediaQueries'
+import { mediaQueries } from '../../styles/MediaQueries/MediaQueries'
 
 import * as fonttheme from '../../styles/variables/FontThemes'
 import * as colors from '../../styles/variables/Colors'
@@ -16,6 +16,11 @@ export const FooterWrapper = styled.footer`
   padding-bottom: 20px;
   background: url(${Background}) bottom no-repeat;
   font-family: ${fonttheme.font1};
+
+  ${mediaQueries('laptop')`
+    height: 90vh;
+  `}
+
   span {
     color: ${colors.ftertitlescolor};
   }
@@ -23,6 +28,9 @@ export const FooterWrapper = styled.footer`
 
 export const Img = styled.img`
   width: 60%;
+  ${mediaQueries('laptop')`
+    width: 484px;
+  `}
 `
 export const List = styled.ul`
   
@@ -43,6 +51,7 @@ export const List = styled.ul`
 export const Container = styled.div`
   margin-top: 20px;
   text-align: center;
+
   h3 {
     margin-bottom: 10px;
   }
@@ -57,4 +66,16 @@ export const IconsContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
+`
+
+export const Row = styled.div`
+  ${mediaQueries('laptop')`
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin-top: 80px;
+  `}
+  ${mediaQueries('laptopxl')`
+    width: 1500px;
+  `}
 `
