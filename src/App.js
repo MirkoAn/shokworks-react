@@ -1,4 +1,5 @@
 import React from 'react'
+import { Carousel } from './Components/Carousel'
 import { Footer } from './Components/Footer'
 import { Header } from './Components/Header'
 import { Hero } from './Components/Hero'
@@ -15,6 +16,7 @@ export const App = () => (
     <Hero />
     <Work />
     <Support />
+    <Carousel />
     <Partners />
     <Footer />
   </>
