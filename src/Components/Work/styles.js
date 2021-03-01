@@ -12,6 +12,7 @@ export const Container = styled.section`
   justify-content: center;
   margin-top: 50px;
   text-align: center;
+
 `
 export const Button = styled.div`
   display: flex;
