@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { mediaQueries } from '../../styles/MediaQueries/MediaQueries'
+
 import * as fonttheme from '../../styles/variables/FontThemes'
 
 export const Container = styled.section`
@@ -17,5 +19,16 @@ export const Container = styled.section`
     font-size: 30px;
     font-family: ${fonttheme.font2};
     margin-bottom: 25px;
+
+    ${mediaQueries('laptop')`
+    flex-direction: row;
+  `}
   }
+`
+
+export const Column = styled.div`
+  ${mediaQueries('laptop')`
+    display: flex;
+    flex-direction: column;
+  `}
 `

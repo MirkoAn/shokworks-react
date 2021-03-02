@@ -1,7 +1,7 @@
 import React from 'react'
 import { ClientsCard } from '../ClientsCard'
 
-import { Container } from './styles'
+import { Container, Column } from './styles'
 
 export const Partners = () => {
   return (
@@ -9,7 +9,9 @@ export const Partners = () => {
       <div>
         <h2>our partners &amp; clients</h2>
       </div>
-      <ClientsCard />
+      <Column>
+        <ClientsCard />
+      </Column>
     </Container>
   )
 }
