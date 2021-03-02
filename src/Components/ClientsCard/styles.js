@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { mediaQueries } from '../../styles/MediaQueries/MediaQueries'
+
 import * as fonttheme from '../../styles/variables/FontThemes'
 import * as colors from '../../styles/variables/Colors'
 
@@ -12,6 +14,7 @@ export const Card = styled.div`
   border-radius: 8px;
   width: 295px;
   height: 280px;
+  cursor: pointer;
 
   a {
     margin-top: 15px;
@@ -23,4 +26,12 @@ export const Card = styled.div`
 `
 export const CardImg = styled.img`
   width: 70%;
+`
+
+export const Rows = styled.div`
+   ${mediaQueries('laptop')`
+      display:flex;
+      flex-direction: row;
+      gap: 40px;
+    `}
 `
