@@ -16,12 +16,20 @@ export const Card = styled.div`
   height: 280px;
   cursor: pointer;
 
+  &:hover  {
+    background-color: ${colors.secondarycolor}
+  }
+
   a {
     margin-top: 15px;
     font-size: 14px;
     font-weight: 500;
     color: ${colors.secondarycolor};
     font-family: ${fonttheme.font1};
+  }
+  
+  &:hover * {
+    color: ${colors.backgroundcolor};
   }
 `
 export const CardImg = styled.img`
