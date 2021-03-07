@@ -15,6 +15,7 @@ export const Card = styled.div`
   width: 295px;
   height: 280px;
   cursor: pointer;
+  transition: transform ease-in-out .5s;
 
   &:hover  {
     background-color: ${colors.secondarycolor}
@@ -30,6 +31,7 @@ export const Card = styled.div`
   
   &:hover * {
     color: ${colors.backgroundcolor};
+    transform: scale(1.05)
   }
 `
 export const CardImg = styled.img`
