@@ -9,6 +9,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  padding: 60px;
 
   li {
     list-style: none;
@@ -22,6 +23,12 @@ export const Container = styled.section`
 
     ${mediaQueries('laptop')`
     flex-direction: row;
+    margin-bottom: 50px;
+    font-size: 38px;
+  `}
+    ${mediaQueries('laptopxl')`
+    font-size: 43px;
+    margin-bottom: 80px;
   `}
   }
 `
