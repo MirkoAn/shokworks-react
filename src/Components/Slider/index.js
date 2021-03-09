@@ -46,8 +46,6 @@ export const Slider = () => {
   if (loading) return 'Loading...'
   if (error) return 'Error!'
 
-  console.log(data)
-
   const Slides = data.map((slide, index) => {
     return (
       <Card key={index}>
