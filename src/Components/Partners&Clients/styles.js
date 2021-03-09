@@ -17,6 +17,7 @@ export const Container = styled.section`
   
   h2 {
     text-transform: capitalize;
+    text-align: center;
     font-size: 30px;
     font-family: ${fonttheme.font2};
     margin-bottom: 25px;
