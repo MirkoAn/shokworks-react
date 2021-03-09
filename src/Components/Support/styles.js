@@ -13,6 +13,8 @@ export const SupportWrapper = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 70px;
+
   ${mediaQueries('laptop')`
     flex-direction: row;
     text-align: left;
