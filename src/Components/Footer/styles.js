@@ -17,8 +17,8 @@ export const FooterWrapper = styled.footer`
   background: url(${Background}) bottom no-repeat;
   font-family: ${fonttheme.font1};
 
-  ${mediaQueries('laptop')`
-    height: 90vh;
+  ${mediaQueries('laptopxl')`
+   padding: 100px 0;
   `}
 
   span {
