@@ -1,4 +1,5 @@
 import React from 'react'
+import { Slider } from './Components/Slider'
 import { Footer } from './Components/Footer'
 import { FormContainer } from './Components/FormContainer'
 import { Header } from './Components/Header'
@@ -16,6 +17,7 @@ export const App = () => (
     <Hero />
     <Work />
     <Support />
+    <Slider />
     <Partners />
     <FormContainer />
     <Footer />
